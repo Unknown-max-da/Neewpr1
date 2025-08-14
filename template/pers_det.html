@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <center>Ushbu odam haqida ma'lumot</center>
+    <h2>Bu odam: {{ persons.first_name }} {{ persons.last_name }}</h2>
+    <h4>Uning telefon raqami: {{ persons.phone }}</h4>
+    <h5>Bu odamning uzi:</h5>
+    {{persons.photo}}
+{% endblock content%}
